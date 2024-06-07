@@ -287,20 +287,20 @@
 
 // console.log('res', res);
 
-const people = [
-  { name: "Alice", age: 25 },
-  { name: "Bob", age: 30 },
-  { name: "Charlie", age: 22 },
-]; // {totalNames: []}
-console.log(people[0].length);
-const res = people.reduce(
-  (acc, el) => {
-    // console.log(acc);
-    // console.log(el);
-    acc.totalNames.push(el.name);
-    return acc;
-  },
-  { totalNames: [] }
-);
+// const people = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 22 },
+// ]; // {totalNames: []}
+// console.log(people[0].length);
+// const res = people.reduce(
+//   (acc, el) => {
+//     // console.log(acc);
+//     // console.log(el);
+//     acc.totalNames.push(el.name);
+//     return acc;
+//   },
+//   { totalNames: [] }
+// );
 
-console.log(res); // { totalNames: [ 'Alice', 'Bob', 'Charlie' ] }
+// console.log(res); // { totalNames: [ 'Alice', 'Bob', 'Charlie' ] }
