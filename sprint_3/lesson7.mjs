@@ -212,29 +212,35 @@
 
 // delay(1000).then(() => console.log("Hello!"));
 
-const promiseFetch = (url) => {
-  return new Promise((res, rej) => {
-    setTimeout(() => {
-      rej("reject1");
-      // res("Some data from server");
-    }, 1000);
-  });
-};
+// const promiseFetch = (url) => {
+//   return new Promise((res, rej) => {
+//     setTimeout(() => {
+//       rej("reject1");
+//       // res("Some data from server");
+//     }, 1000);
+//   });
+// };
 
-promiseFetch
-  .catch((t) => t + "catch1")
-  .catch((t) => t + "catch2")
-  .then((t) => t + "then1")
-  .finally((t) => t + "finally")
-  .then((t) => console.log(t));
+// promiseFetch
+//   .catch((t) => t + "catch1")
+//   .catch((t) => t + "catch2")
+//   .then((t) => t + "then1")
+//   .finally((t) => t + "finally")
+//   .then((t) => console.log(t));
 
-const delay = (ms) =>
-  new Promise((res, rej) => {
-    setTimeout(() => {
-      res();
-    }, ms);
-  });
+// const delay = (ms) =>
+//   new Promise((res, rej) => {
+//     setTimeout(() => {
+//       res();
+//     }, ms);
+//   });
 
-delay(1000).then(() => {
-  console.log("Hello!");
-});
+// delay(1000).then(() => {
+//   console.log("Hello!");
+// });
+
+const str = "Hello from lesson 7";
+
+export function foo() {
+  console.log(str);
+}

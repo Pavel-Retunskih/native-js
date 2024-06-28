@@ -1,3 +1,4 @@
+import { foo } from "./lesson7.mjs";
 // globalLE {startEngine: function, speed: undefined} --> null
 // startEngine()
 
@@ -101,18 +102,18 @@
 // --------------------------
 
 // 2(4) --> 2 * 2(3) --> 2 * 2 * 2(2) --> 2 * 2 * 2 * 2(1)
-let count = 0;
-const pow = (n, x) => {
-  // {n: 2, x: 3} --> global
-  console.log(++count);
-  if (x === 1) {
-    return n;
-  } else {
-    return n * pow(n, x - 1);
-  }
-};
+// let count = 0;
+// const pow = (n, x) => {
+//   // {n: 2, x: 3} --> global
+//   console.log(++count);
+//   if (x === 1) {
+//     return n;
+//   } else {
+//     return n * pow(n, x - 1);
+//   }
+// };
 
-console.log(pow(2, 0));
+// console.log(pow(2, 0));
 
 // // 5! --> 5 * 4! --> 5 * 4 * 3! --> 5 * 4 * 3 * 2! --> 5 * 4 * 3 * 2 * 1!
 
@@ -125,3 +126,5 @@ console.log(pow(2, 0));
 // };
 
 // console.log(factorial(15));
+const str = "Hello from lesson 6";
+foo();
