@@ -126,5 +126,3 @@ import { foo } from "./lesson7.mjs";
 // };
 
 // console.log(factorial(15));
-const str = "Hello from lesson 6";
-foo();

@@ -235,12 +235,23 @@
 //     }, ms);
 //   });
 
-// delay(1000).then(() => {
+// delay(2000).then(() => {
 //   console.log("Hello!");
 // });
+// function getRandom() {
+//   return Math.floor(Math.random() * 10);
+// }
 
-const str = "Hello from lesson 7";
+// const promise = new Promise((resolve, reject) => {
+//   let r = getRandom();
+//   setTimeout(() => {
+//     if (r > 5) {
+//       resolve("resolve" + " " + r);
+//     } else {
+//       reject("reject" + " " + r);
+//     }
+//   }, 1000);
+// });
 
-export function foo() {
-  console.log(str);
-}
+// promise.then((data) => console.log(data)).catch((error) => console.log(error));
+
