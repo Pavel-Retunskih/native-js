@@ -18,8 +18,6 @@ function insertionSort(arr) {
   for (let i = 1; i < n; i++) {
     let key = arr[i];
     let j = i - 1;
-
-    // Сдвигаем элементы arr[0..i-1], которые больше key, на одну позицию вперед
     while (j >= 0 && arr[j] > key) {
       arr[j + 1] = arr[j];
       j = j - 1;
@@ -35,7 +33,6 @@ const sortedArr = insertionSort(arr3);
 console.log("Отсортированный вставками массив:", sortedArr);
 
 // сортировка слиянием
-
 function mergeSort(arr) {
   if (arr.length <= 1) {
     return arr;
@@ -88,3 +85,22 @@ function merge(left, right) {
 const arr4 = [38, 27, 43, 3, 9, 82, 10];
 const sortedArr1 = mergeSort(arr);
 console.log("Отсортированный слиянием массив:", sortedArr);
+
+// сортировка пузырьком
+function bubbleSort(arr) {
+  let n = arr.length;
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+}
+
+// Пример использования
+let arr5 = [64, 34, 25, 12, 22, 11, 90];
+bubbleSort(arr);
+console.log("Отсортированный пузырьком массив:", arr5);
